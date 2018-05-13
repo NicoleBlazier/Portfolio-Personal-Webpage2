@@ -1,0 +1,478 @@
+/*
+#ebebeb - light grey
+#242024 - charcoal
+#6ec4ce - teal
+#c0c0c0 - medium grey
+*/
+
+* {
+box-sizing: border-box;
+}
+/* * does not affect the width of the container */
+
+
+body {
+background-color: grey;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+/* Headers */
+.boldblueheader {
+    font-weight: bold;
+    color: #6ec4ce;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1rem;
+    }
+    
+    .boldwhiteheader {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1rem;
+    }
+    
+    .normalblackheader {
+    font-weight: bold;
+    color: #242024;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1rem;
+    }
+    
+    .smallwhiteheader {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 1rem;
+    }
+    
+    .smallblackheader {
+    color: #242024;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 1rem;
+    }
+
+/* Navigation Section */
+.container {
+width: 100%;
+background-color: white;
+}
+
+
+#logo {
+    text-align: center;
+}
+img {
+    width: 7rem;
+}
+
+/* Navigation bar */
+ul {
+    padding: 0;
+}
+nav li {
+background-color: #242024;
+color: white;
+text-align: center;
+list-style-type: none;
+padding: 1rem;
+border: 1px solid white;
+}
+
+nav li:hover {
+background-color: #6ec4ce;
+color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .logonavcontainer {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #logo {
+        text-align: left;
+    }
+    ul  {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        float: right;
+    }
+    nav {
+        width: 100%;
+        
+    }
+}
+
+/* Banner Section */
+#banner {
+text-indent: 50px;
+font-size: 26px;
+color: white;
+margin-top: 50px;
+}
+
+.photocontainer {
+width: 100%;
+}
+
+@media only screen and (min-width: 300px) {
+    .photocontainer {
+background-image: url('../image/nicole.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+        width: 100%;
+        height: 50vh;
+    }
+    .greeting {
+        display: flex;
+        flex-flow: column wrap;
+        color: #6ec4ce;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .photocontainer {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* Info Section */
+#info {
+background-color: #ebebeb;
+color: #242024;
+padding: 2rem 4rem;
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+}
+
+/* Description Section */
+#promo {
+background-color: #242024;
+color: white;
+}
+
+#promo .column {
+width: 50%;
+padding: 2rem 1rem;
+text-align: center;
+font-size: 20px;
+font-weight: normal;
+margin: auto;
+height: 100%;
+}
+
+.column .header {
+color: #6ec4ce;
+font-size: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+    #promo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+  justify-content: center;
+    }
+    .promocontainer {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #promo .column {
+        padding: 2rem;
+        margin: 0rem 2rem;
+    }
+    }
+}
+
+/* Skills Section */
+#skills {
+    width: 100%;
+}
+
+.flex-container {
+display: flex;
+flex-wrap: nowrap;
+background-color: #242024;
+color: white;
+font-weight: bold;
+text-align: center;
+margin: auto 1.5rem;
+width: 90%;
+border-bottom: 2px solid white;
+line-height: 50px;
+font-size: 14px;
+}
+
+.progress {
+background-color: #6ec4ce;
+color: #6ec4ce;
+}
+
+.percentage {
+background-color:#c0c0c0;
+text-align: right;
+}
+
+/* Portfolio Section */
+#portfolio {
+background-color: #6ec4ce;
+color: black;
+height: 100%;
+width: 100%;
+}
+
+.portcontainer {
+    margin: 4rem 0rem;
+}
+
+.portrow {
+    background-color: white;
+    color: #242024;
+    width: 245px;
+    height:250px;
+    margin: auto auto 1rem auto;
+    border: 10px solid white;
+}
+
+.portrow h6 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.hackathonimg {
+    width: auto;
+    height: 150px;
+}
+
+
+#portfolio button {
+background-color: #6ec4ce;
+color: white;
+width: 225px;
+height: 30px;
+border-radius: 12px;
+}
+
+#portfolio button:hover {
+background-color:#242024;
+}
+
+@media only screen and (min-width: 1125px) {
+    .portcontainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        
+    }
+    .rowax {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 800px;
+        margin: auto;
+    }
+}
+
+
+/* About Me Section */
+#aboutme .flexcontainer {
+min-height: 150px;
+text-align: center;
+}
+
+#aboutme {
+background-color: #ebebeb;
+color: #242024;
+font-size: 20px;
+overflow: hidden;
+}
+
+#aboutme img {
+width: 400px;
+height: 400px;
+padding: 2rem;
+margin: auto;
+}
+
+.item2 {
+    padding-left: 1rem;
+}
+
+#aboutme .button {
+background-color: #6ec4ce;
+color: white;
+padding: 12px 60px;
+margin-bottom: 1rem;
+text-align: center;
+font-size: 16px;
+border-radius: 12px;
+}
+#aboutme .button:hover {
+background-color:#242024;
+}
+
+@media only screen and (min-width: 800px) {
+    .flexcontainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+}
+
+/* Find Me Here */
+#findmehere {
+background-color: #242024;
+overflow: hidden;
+height: 100%;
+width: 100%;
+text-align: center;
+}
+
+#findmehere i {
+    font-size: 80px;
+    margin: 1rem auto; 
+    color:  #ebebeb;
+    text-decoration: none;
+}
+
+
+
+
+/* Contact me */
+#contactme {
+background-color: #6ec4ce;
+color: white;
+overflow: hidden;
+width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.formrow {
+    margin: auto;
+    text-align: center;
+}
+
+input {
+width: 300px;
+height: 30px;
+margin-top: 12px;
+border: none;
+color: #242024;
+}
+
+h4 {
+font-size: 24px;
+margin: auto;
+padding: 1rem;
+}
+
+textarea {
+width: 300px;
+height: 150px;
+border: none;
+margin: auto;
+}
+
+.submitbtn {
+    margin: auto;
+    padding: 1rem;
+}
+.submitbtn button {
+background-color: #242024;
+color: #ebebeb;
+border: none;
+width: 300px;
+height: 50px;
+border-radius: 12px;
+font-size: 16px;
+}
+
+@media only screen and (min-width: 800px) {
+    .form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    textarea, .submitbtn button {
+        width: 600px;
+    }
+}
+
+.submitbtn button:hover {
+background-color: #ebebeb;
+color: #242024
+}
+
+/* Nice to Meet You Section */
+hr {
+background-color: #6ec4ce;
+width: 300px;
+height: 10px;
+border: none;
+margin-top: 3.40rem;
+}
+#nicetomeetyou {
+background-color: #c0c0c0;
+color: #242024;
+overflow: hidden;
+height: 100%;
+text-align: center;
+}
+
+.badrow {
+    width: 120px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+#nicetomeetyou i {
+    font-size: 80px;
+    margin: 1rem auto; 
+    color: #242024;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .nicerow {
+        display: flex;
+        flex-flow: row nowrap;
+        }
+    .badrow {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    i {
+        padding: 1rem;
+    }
+}
+
